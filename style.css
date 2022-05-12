@@ -1,5 +1,5 @@
 body {
-    background-image: url("mochaGrunge.png");
+    background: url("mochaGrunge.png");
     color: #4e4e4e;
     font-family: sans-serif;
     font-variant-caps: all-small-caps;
@@ -7,6 +7,13 @@ body {
     margin: auto;
 }
 
+.center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  }
 
 section{
     display: flex;
@@ -103,13 +110,16 @@ a:hover, a:active {
 @media only screen and (max-width: 768px){
     body {
 
+        background: #f6f6f6;
+
+
     }
     section{
         width: 90%;
         padding: 50px 20px 20px 20px;
-        border: 2px dotted dimgray;
+        border: 0px dotted dimgray;
         background-image: none;
-        border-radius: 50px;
+        border-radius: 0;
 
         margin: auto;
         align-items: center;
